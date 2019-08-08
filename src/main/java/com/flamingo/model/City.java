@@ -2,9 +2,11 @@ package com.flamingo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import org.springframework.stereotype.Component;
 
@@ -14,20 +16,24 @@ import org.springframework.stereotype.Component;
 public class City {
 
 	@Id
-	@GeneratedValue
+	//@GeneratedValue
 	@Column(name="cityId")
 	private int cityId;
 	
 	@Column(name="cityName")
+	@NotNull
 	private String cityName;
 	
 	@Column(name="stateName")
+	@NotNull
 	private String stateName;
 	
 	@Column(name="countryName")
+	@NotNull
 	private String countryName;
 	
 	@Column(name="pincode")
+	@NotNull
 	private int pincode;
 	
 	

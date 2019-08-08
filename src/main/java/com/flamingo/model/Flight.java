@@ -1,6 +1,7 @@
 package com.flamingo.model;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
@@ -10,13 +11,17 @@ import org.springframework.stereotype.Component;
 @Entity
 @Table(name="flight")
 public class Flight {
+	
 	@Id
+	@GeneratedValue
 	private int flightId;
 	private String flightName;
 	private int capacity;
 	private String model;
 	
-	
+	public Flight() {
+		// TODO Auto-generated constructor stub
+	}
 	
 	public Flight(int flightId, String flightName, int capacity, String model) {
 		super();

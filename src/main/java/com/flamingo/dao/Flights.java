@@ -7,9 +7,9 @@ import com.flamingo.model.Flight;
 
 public interface Flights {
 
-	public void insert(Flight flight);
-	public void delete(Flight flight);
-	public void update(Flight flight);
-	public List<Flight> getAllFlights();
-	public Flight getFlightById(int flightId);
+	 void insert(Flight flight);
+	 void delete(Flight flight);
+	 void update(Flight flight);
+	 List<Flight> getAllFlights();
+	 Flight getFlightById(int flightId);
 }

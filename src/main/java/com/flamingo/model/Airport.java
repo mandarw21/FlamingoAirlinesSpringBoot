@@ -1,12 +1,17 @@
+
 package com.flamingo.model;
+
+
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
-import javax.persistence.OneToMany;
+import javax.persistence.OneToOne;
 import javax.persistence.Table;
+
+import io.micrometer.core.lang.NonNull;
 
 @Entity
 @Table(name = "airport")
@@ -19,11 +24,12 @@ public class Airport {
 	private int airportId;
 	
 	@Column(name = "airportName",nullable = false)
+	@NonNull
 	private String airportName;
 	
-	@OneToMany(targetEntity = City.class)
-	@JoinColumn(name="cityId", referencedColumnName = "cityId",nullable = false)
-	private int cityId;
+	@OneToOne(targetEntity = City.class)
+	@JoinColumn(name="ap_cityId", referencedColumnName = "cityId",nullable = false)
+	private City city;
 	
 	
 	
@@ -40,11 +46,11 @@ public class Airport {
 	public void setAirportName(String airportName) {
 		this.airportName = airportName;
 	}
-	public int getCityId() {
-		return cityId;
+	public City getCity() {
+		return city;
 	}
-	public void setCityId(int cityId) {
-		this.cityId = cityId;
+	public void setCity(City city) {
+		this.city = city;
 	}
 	
 	

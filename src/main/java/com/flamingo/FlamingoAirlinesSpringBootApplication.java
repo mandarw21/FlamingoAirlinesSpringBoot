@@ -59,7 +59,7 @@ public class FlamingoAirlinesSpringBootApplication {
 		
 		properties.put("hibernate.dialect", env.getProperty("spring.jpa.properties.hibernate.dialect"));
 		properties.put("hibernate.show_sql", env.getProperty("spring.jpa.show-sql"));
-		
+		properties.put("hibernate.hbm2ddl.auto", env.getProperty("spring.jpa.hibernate.ddl-auto"));
 		
 		LocalSessionFactoryBean factoryBean = new LocalSessionFactoryBean();
 		

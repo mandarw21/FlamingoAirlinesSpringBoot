@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.orm.hibernate5.HibernateTemplate;
+import org.springframework.stereotype.Repository;
 
 import com.flamingo.model.Flight;
 /*
@@ -19,7 +20,7 @@ import com.flamingo.model.Flight;
  * 
  * */
 
-
+@Repository
 public class FlightsImpl implements Flights {
 
 	@Autowired

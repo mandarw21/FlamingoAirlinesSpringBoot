@@ -11,9 +11,9 @@ public interface CityServices {
 	void remove(City city);
 	
 	City findCityByCityId(int cityId);
-	City findCityByCityName();
+	City findCityByCityName(City city);
 	
-	int getCityCount();
+	
 	
 	List<City> findAllCities();
 	

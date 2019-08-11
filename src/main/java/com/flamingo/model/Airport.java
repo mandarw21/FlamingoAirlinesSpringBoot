@@ -5,6 +5,7 @@ package com.flamingo.model;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.ForeignKey;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
@@ -19,7 +20,7 @@ public class Airport {
 
 	
 	@Id
-	@GeneratedValue
+	//@GeneratedValue
 	@Column(name = "airportId")
 	private int airportId;
 	
@@ -32,8 +33,17 @@ public class Airport {
 	private City city;
 	
 	
+	public Airport() {
+		// TODO Auto-generated constructor stub
+	}
+
 	
-	
+	public Airport(int airportId, String airportName, City city) {
+		super();
+		this.airportId = airportId;
+		this.airportName = airportName;
+		this.city = city;
+	}
 	public int getAirportId() {
 		return airportId;
 	}

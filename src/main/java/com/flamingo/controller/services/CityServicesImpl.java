@@ -45,21 +45,17 @@ public class CityServicesImpl implements CityServices {
 	}
 
 	@Override
-	public City findCityByCityName() {
+	public City findCityByCityName(City city) {
 		// TODO Auto-generated method stub
 		return null;
 	}
 
-	@Override
-	public int getCityCount() {
-		// TODO Auto-generated method stub
-		return 0;
-	}
+	
 
 	@Override
 	public List<City> findAllCities() {
 		// TODO Auto-generated method stub
-		return null;
+		return cityDao.listAllCities();
 	}
 
 }

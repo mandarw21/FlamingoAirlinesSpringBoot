@@ -18,7 +18,7 @@ import com.flamingo.model.City;
 public class CityImpl implements Cities {
 
 	@Autowired
-	HibernateTemplate hibernateTemplate;
+	private HibernateTemplate hibernateTemplate;
 	
 	@Override
 	public void addCity(City city) {

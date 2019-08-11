@@ -11,9 +11,10 @@ public interface Airports {
 	void updateAirport(Airport airport);
 	void deleteAirport(Airport airport);
 	
-	Airport findAirportByCityId(Airport airport);
-	Airport findAirportByAirportId(Airport airport);
-	Airport findAirportByAirportName(Airport airport);
+	Airport findAirportByCityId(int cityId);
+	Airport findAirportByAirportId(int airportId);
+	Airport findAirportByAirportName(String airportName);
+	Airport findAirportByCityName(String cityName);
 	
-	List<Airport> listAll();
+	List<Airport> listAllAirports();
 }

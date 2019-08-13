@@ -6,11 +6,12 @@ import com.flamingo.model.User;
 
 
 public interface UserServices {
+	
 	void insertUser(User user);
 	void editUser(User user);
 	void removeUser(User user);
 	
-	User findUserByUserId(int userId);
+	
 	User findUserByEmailId(User user);
 	
 	

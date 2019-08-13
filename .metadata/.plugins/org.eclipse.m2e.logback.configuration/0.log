@@ -41,3 +41,123 @@ java.nio.file.AccessDeniedException: C:\Program Files\Git\mingw64\etc\.probe-c23
 2019-08-08 17:33:46,116 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\ConstructorInjection\src\main\resources
 2019-08-08 17:33:46,118 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2019-08-08 17:33:46,118 [Worker-16: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\ConstructorInjection\src\test\resources
+2019-08-12 18:47:54,320 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2019-08-12 18:48:14,493 [Worker-4: Decoration Calculation] WARN  org.eclipse.jgit.util.FS - C:\Program Files\Git\mingw64\etc\.probe-89250ca4-c7f7-4fb9-b4ba-21aba97b511c
+java.nio.file.AccessDeniedException: C:\Program Files\Git\mingw64\etc\.probe-89250ca4-c7f7-4fb9-b4ba-21aba97b511c
+	at sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:83) ~[na:1.8.0_171]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:97) ~[na:1.8.0_171]
+	at sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:102) ~[na:1.8.0_171]
+	at sun.nio.fs.WindowsFileSystemProvider.newByteChannel(WindowsFileSystemProvider.java:230) ~[na:1.8.0_171]
+	at java.nio.file.Files.newByteChannel(Files.java:361) ~[na:1.8.0_171]
+	at java.nio.file.Files.createFile(Files.java:632) ~[na:1.8.0_171]
+	at org.eclipse.jgit.util.FS$FileStoreAttributeCache.<init>(FS.java:234) ~[org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.util.FS$FileStoreAttributeCache.getFsTimestampResolution(FS.java:211) ~[org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.util.FS.getFsTimerResolution(FS.java:321) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.<init>(FileSnapshot.java:186) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.internal.storage.file.FileSnapshot.save(FileSnapshot.java:122) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.storage.file.FileBasedConfig.load(FileBasedConfig.java:156) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.internal.storage.file.FileRepository.loadSystemConfig(FileRepository.java:245) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.internal.storage.file.FileRepository.<init>(FileRepository.java:203) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.storage.file.FileRepositoryBuilder.build(FileRepositoryBuilder.java:88) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.jgit.storage.file.FileRepositoryBuilder.create(FileRepositoryBuilder.java:108) [org.eclipse.jgit_5.4.0.201906121030-r.jar:5.4.0.201906121030-r]
+	at org.eclipse.egit.core.RepositoryCache.lookupRepository(RepositoryCache.java:58) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.map(GitProjectData.java:693) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.remapAll(GitProjectData.java:651) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.load(GitProjectData.java:634) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.project.GitProjectData.get(GitProjectData.java:220) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.project.RepositoryMapping.getProjectData(RepositoryMapping.java:335) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.project.RepositoryMapping.findMapping(RepositoryMapping.java:356) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.project.RepositoryMapping.getMapping(RepositoryMapping.java:296) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.core.internal.util.ResourceUtil.getRepository(ResourceUtil.java:712) [org.eclipse.egit.core_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.ui.internal.resources.ResourceStateFactory.getIndexDiffDataOrNull(ResourceStateFactory.java:103) [org.eclipse.egit.ui_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorateResource(GitLightweightDecorator.java:224) [org.eclipse.egit.ui_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.egit.ui.internal.decorators.GitLightweightDecorator.decorate(GitLightweightDecorator.java:201) [org.eclipse.egit.ui_5.4.0.201906121030-r.jar:na]
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorDefinition.decorate(LightweightDecoratorDefinition.java:247) [org.eclipse.ui.workbench_3.115.0.v20190521-1602.jar:na]
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager$LightweightRunnable.run(LightweightDecoratorManager.java:105) [org.eclipse.ui.workbench_3.115.0.v20190521-1602.jar:na]
+	at org.eclipse.core.runtime.SafeRunner.run(SafeRunner.java:45) [org.eclipse.equinox.common_3.10.400.v20190516-1504.jar:na]
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.decorate(LightweightDecoratorManager.java:360) [org.eclipse.ui.workbench_3.115.0.v20190521-1602.jar:na]
+	at org.eclipse.ui.internal.decorators.LightweightDecoratorManager.getDecorations(LightweightDecoratorManager.java:346) [org.eclipse.ui.workbench_3.115.0.v20190521-1602.jar:na]
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.ensureResultCached(DecorationScheduler.java:333) [org.eclipse.ui.workbench_3.115.0.v20190521-1602.jar:na]
+	at org.eclipse.ui.internal.decorators.DecorationScheduler$1.run(DecorationScheduler.java:300) [org.eclipse.ui.workbench_3.115.0.v20190521-1602.jar:na]
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63) [org.eclipse.core.jobs_3.10.400.v20190506-1457.jar:na]
+2019-08-12 18:48:22,802 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:22,803 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\BeanInheritence\src\main\resources
+2019-08-12 18:48:22,807 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:22,807 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\BeanInheritence\src\test\resources
+2019-08-12 18:48:25,829 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:25,830 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\BeanLifeCycle\src\main\resources
+2019-08-12 18:48:25,843 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:25,843 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\BeanLifeCycle\src\test\resources
+2019-08-12 18:48:27,304 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:27,305 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\ConstructorInjection\src\main\resources
+2019-08-12 18:48:27,314 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:27,314 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\ConstructorInjection\src\test\resources
+2019-08-12 18:48:31,858 [Worker-14: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.zensar.web:LoginWebApp:0.0.1-SNAPSHOT @ D:\Mandar\Spring\LoginWebApp\pom.xml.
+2019-08-12 18:48:36,801 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-08-12 18:48:36,888 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-08-12 18:48:36,892 [Worker-14: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-08-12 18:48:36,895 [Worker-14: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\LoginWebApp\src\test\resources
+2019-08-12 18:48:38,869 [Worker-12: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-08-12 18:48:39,115 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-08-12 18:48:39,117 [Worker-12: Building workspace] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (Cp1252 actually) to copy filtered resources, i.e. build is platform dependent!
+2019-08-12 18:48:39,122 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\LoginWebApp\src\test\resources
+2019-08-12 18:48:41,894 [Worker-12: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.zensar.spring:SetterInjection:0.0.1-SNAPSHOT @ D:\Mandar\Spring\SetterInjection\pom.xml.
+2019-08-12 18:48:42,772 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:42,772 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SetterInjection\src\main\resources
+2019-08-12 18:48:42,775 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:42,775 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SetterInjection\src\test\resources
+2019-08-12 18:48:43,860 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:43,860 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBean\src\main\resources
+2019-08-12 18:48:43,867 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:43,867 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBean\src\test\resources
+2019-08-12 18:48:44,552 [Worker-12: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.zensar.spring:SimpleBeanAnno:0.0.1-SNAPSHOT @ D:\Mandar\Spring\SimpleBeanAnno\pom.xml.
+2019-08-12 18:48:45,363 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:45,363 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanAnno\src\main\resources
+2019-08-12 18:48:45,415 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:45,415 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanAnno\src\test\resources
+2019-08-12 18:48:47,539 [Worker-12: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.zensar.spring:SimpleBeanXmlAnno:0.0.1-SNAPSHOT @ D:\Mandar\Spring\SimpleBeanXmlAnno\pom.xml.
+2019-08-12 18:48:48,261 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:48,261 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanXmlAnno\src\main\resources
+2019-08-12 18:48:48,264 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:48:48,265 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanXmlAnno\src\test\resources
+2019-08-12 18:48:55,685 [Worker-12: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.maven.ide.eclipse.wtp.WarLifecycleMapping lifecycle mapping for MavenProject: com.zensar:SpringBootProductRestService:0.0.1-SNAPSHOT @ D:\Mandar\Spring\SpringBootProductRestService\pom.xml.
+2019-08-12 18:49:06,867 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:06,868 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-08-12 18:49:06,902 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-08-12 18:49:06,906 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:06,907 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringBootProductRestService\src\test\resources
+2019-08-12 18:49:09,849 [Worker-12: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.zensar.spring:SpringHibernate:0.0.1-SNAPSHOT @ D:\Mandar\Spring\SpringHibernate\pom.xml.
+2019-08-12 18:49:12,856 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:12,856 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringHibernate\src\main\resources
+2019-08-12 18:49:12,857 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:12,857 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringHibernate\src\test\resources
+2019-08-12 18:49:13,609 [Worker-12: Building workspace] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.zensar.spring:SpringJDBC:0.0.1-SNAPSHOT @ D:\Mandar\Spring\SpringJDBC\pom.xml.
+2019-08-12 18:49:14,275 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:14,275 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringJDBC\src\main\resources
+2019-08-12 18:49:14,277 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:14,277 [Worker-12: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringJDBC\src\test\resources
+2019-08-12 18:49:17,928 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:17,928 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SetterInjection\src\main\resources
+2019-08-12 18:49:17,930 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:17,930 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SetterInjection\src\test\resources
+2019-08-12 18:49:18,718 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:18,719 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanAnno\src\main\resources
+2019-08-12 18:49:18,721 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:18,722 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanAnno\src\test\resources
+2019-08-12 18:49:19,527 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:19,528 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanXmlAnno\src\main\resources
+2019-08-12 18:49:19,529 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:19,529 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SimpleBeanXmlAnno\src\test\resources
+2019-08-12 18:49:25,070 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:25,075 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2019-08-12 18:49:25,087 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2019-08-12 18:49:25,092 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:25,092 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringBootProductRestService\src\test\resources
+2019-08-12 18:49:26,254 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:26,254 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringHibernate\src\main\resources
+2019-08-12 18:49:26,255 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:26,256 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringHibernate\src\test\resources
+2019-08-12 18:49:26,948 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:26,948 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringJDBC\src\main\resources
+2019-08-12 18:49:26,951 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2019-08-12 18:49:26,951 [Worker-17: Building workspace] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory D:\Mandar\Spring\SpringJDBC\src\test\resources

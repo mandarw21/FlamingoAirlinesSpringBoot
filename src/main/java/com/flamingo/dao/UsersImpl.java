@@ -31,11 +31,7 @@ public class UsersImpl implements Users {
 		hibernateTemplate.delete(user);
 	}
 
-	@Override
-	public User findUserByUserId(int userId) {
-		// TODO Auto-generated method stub
-		return hibernateTemplate.get(User.class,userId);
-	}
+	
 
 	@Override
 	public User findUserByEmailId(User user) {

@@ -21,6 +21,7 @@ public class UserServicesImpl implements UserServices {
 	@Override
 	public void insertUser(User user) {
 		// TODO Auto-generated method stub
+		
 		userDao.addUser(user);
 	}
 
@@ -36,11 +37,7 @@ public class UserServicesImpl implements UserServices {
 		userDao.deleteUser(user);
 	}
 
-	@Override
-	public User findUserByUserId(int userId) {
-		// TODO Auto-generated method stub
-		return userDao.findUserByUserId(userId);
-	}
+	
 
 	@Override
 	public User findUserByEmailId(User user) {

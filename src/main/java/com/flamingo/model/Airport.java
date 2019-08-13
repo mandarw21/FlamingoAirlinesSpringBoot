@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.JoinColumn;
 import javax.persistence.OneToOne;
 import javax.persistence.Table;
+import javax.validation.constraints.NotNull;
 
 import io.micrometer.core.lang.NonNull;
 
@@ -25,7 +26,7 @@ public class Airport {
 	private int airportId;
 	
 	@Column(name = "airportName",nullable = false)
-	@NonNull
+	@NotNull
 	private String airportName;
 	
 	@OneToOne(targetEntity = City.class)

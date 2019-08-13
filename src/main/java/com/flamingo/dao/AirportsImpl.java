@@ -37,14 +37,7 @@ public class AirportsImpl implements Airports {
 
 	}
 
-	@Override
-	public Airport findAirportByCityId(int ap_cityId) {
-		// TODO Auto-generated method stub
-		
-			
-	return hibernateTemplate.get(Airport.class,ap_cityId);
 	
-	}
 
 	@Override
 	public Airport findAirportByAirportId(int airportId) {
@@ -53,17 +46,8 @@ public class AirportsImpl implements Airports {
 		
 	}
 
-	@Override
-	public Airport findAirportByAirportName(String airportName) {
-		// TODO Auto-generated method stub
-		return hibernateTemplate.get(Airport.class,airportName);	
-
-	}
-
-	public Airport findAirportByCityName(String cityName) {
-		 
-		return hibernateTemplate.get(Airport.class,cityName);	
-	 }
+	
+	
 	 
 	 
 	@Override

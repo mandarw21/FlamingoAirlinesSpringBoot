@@ -11,7 +11,7 @@ public interface Users {
 	void updateUser(User user);
 	void deleteUser(User user);
 	
-	User findUserByUserId(int userId);
+	
 	User findUserByEmailId(User user);
 	
 	List<User> listAllUsers();
